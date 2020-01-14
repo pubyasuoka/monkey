@@ -1,17 +1,12 @@
 {
-  # 任意の名前でOKです。
   "name": "Existing Docker Compose (Extend)",
  
-  # Remoteでログインしたいコンテナを作成するためのdocker-composeファイルを指定してください。
   "dockerComposeFile": [
     "../docker-compose.yml"
   ],
- 
   # 先程指定したdocker-composeファイル内に定義しているサービスで
-  # 起動したいものを指定してください。
   "service": "monkey",
-  # これを指定しないと、コンテナが再生成すると拡張機能が消えます。
-  # 今回はXdebugとPHP IntelliSenseをインストールします。
+  "workspaceFolder": "/go/src/work"
   "extensions": [
   ],
   "shutdownAction": "stopCompose" //or "none"
